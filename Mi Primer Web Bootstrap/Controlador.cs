@@ -15,8 +15,8 @@ namespace Mi_Primer_Web_Bootstrap
         public int Login(Permisos permisos)
         {
             string query= "SELECT id_usuario FROM Usuarios " +
-                "WHERE usuario = ''" + permisos.Usuario + "' " +
-                "AND PWDCOMPARE('" + permisos.Contrasena + "', contrasena)= 1";
+                "WHERE usuario = '" + permisos.Usuario + "' " +
+                "AND contrasena='"+permisos.Contrasena+"'";
 
             try
             {

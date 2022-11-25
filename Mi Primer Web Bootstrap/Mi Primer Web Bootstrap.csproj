@@ -92,6 +92,10 @@
     <Content Include="Otros Elementos\PaginaBootstrap.aspx" />
     <Content Include="Otros Elementos\profesores.aspx" />
     <Content Include="Productos.aspx" />
+    <Content Include="ProductosAgregar.aspx" />
+    <Content Include="ProductosConsultas.aspx" />
+    <Content Include="ProductosEliminar.aspx" />
+    <Content Include="ProductosModificar.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -281,6 +285,34 @@
     </Compile>
     <Compile Include="Productos.aspx.designer.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosAgregar.aspx.cs">
+      <DependentUpon>ProductosAgregar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductosAgregar.aspx.designer.cs">
+      <DependentUpon>ProductosAgregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosConsultas.aspx.cs">
+      <DependentUpon>ProductosConsultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductosConsultas.aspx.designer.cs">
+      <DependentUpon>ProductosConsultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosEliminar.aspx.cs">
+      <DependentUpon>ProductosEliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductosEliminar.aspx.designer.cs">
+      <DependentUpon>ProductosEliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductosModificar.aspx.cs">
+      <DependentUpon>ProductosModificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductosModificar.aspx.designer.cs">
+      <DependentUpon>ProductosModificar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

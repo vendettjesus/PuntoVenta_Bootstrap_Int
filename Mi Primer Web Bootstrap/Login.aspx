@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-header text-center">
+                        <div class="card-header text-center alert alert-info">
                             <strong>Bienvenido al Sistema</strong> 
                         </div>
                         <div class="card-body">
@@ -47,7 +47,7 @@
                                 <label for="Password"><strong>Contraseña</strong></label>
                                 <asp:TextBox type="password" ID="TextPassword" runat="server" class="form-control" placeholder="Introduzca Su Contraseña" TextMode="Password" required="required"></asp:TextBox>
                             </div>
-                            <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" class="btn btn-primary float-md-end" OnClick="Button1_Click"/>
+                            <asp:Button ID="Button1" runat="server" Text="Iniciar Sesión" class="btn btn-info float-md-end" OnClick="Button1_Click"/>
                         </div>
                     </div>
                 </div>

@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master"  AutoEventWireup="true" CodeBehind="Productos.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.Productos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductosModificar.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.ProductosModificar" %>
 
-            <asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
                     <div class="row">
                         <div class="col-md-2 pb-3">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action active" id="list-home-list" href="ProductosAgregar.aspx" role="tab" aria-controls="home">Agregar</a>
+                                <a class="list-group-item list-group-item-action" id="list-home-list" href="ProductosAgregar.aspx" role="tab" aria-controls="home">Agregar</a>
                                 <a class="list-group-item list-group-item-action" id="list-profile-list"  href="ProductosEliminar.aspx" role="tab" aria-controls="profile">Eliminar</a>
-                                <a class="list-group-item list-group-item-action" id="list-messages-list" href="ProductosModificar.aspx" role="tab" aria-controls="messages">Modificar</a>
+                                <a class="list-group-item list-group-item-action active" id="list-messages-list" href="ProductosModificar.aspx" role="tab" aria-controls="messages">Modificar</a>
                                 <a class="list-group-item list-group-item-action" id="list-settings-list" href="ProductosConsultas.aspx" role="tab">Consultas</a>
                             </div>
                         </div>
@@ -14,7 +14,7 @@
                         <br />
                         <div class="col-md-8">
                             <div class="card ">
-                                <h5 class="card-header text-center">Agregar Producto</h5>
+                                <h5 class="card-header text-center">Modificar Producto</h5>
                                     <div class="card-body">
                                         
                                             <div class="mb-3">

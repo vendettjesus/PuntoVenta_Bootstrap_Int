@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master"  AutoEventWireup="true" CodeBehind="Productos.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.Productos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductosEliminar.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.ProductosEliminar" %>
 
-            <asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
                     <div class="row">
                         <div class="col-md-2 pb-3">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action active" id="list-home-list" href="ProductosAgregar.aspx" role="tab" aria-controls="home">Agregar</a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list"  href="ProductosEliminar.aspx" role="tab" aria-controls="profile">Eliminar</a>
+                                <a class="list-group-item list-group-item-action" id="list-home-list" href="ProductosAgregar.aspx" role="tab" aria-controls="home">Agregar</a>
+                                <a class="list-group-item list-group-item-action active" id="list-profile-list"  href="ProductosEliminar.aspx" role="tab" aria-controls="profile">Eliminar</a>
                                 <a class="list-group-item list-group-item-action" id="list-messages-list" href="ProductosModificar.aspx" role="tab" aria-controls="messages">Modificar</a>
                                 <a class="list-group-item list-group-item-action" id="list-settings-list" href="ProductosConsultas.aspx" role="tab">Consultas</a>
                             </div>
@@ -14,7 +14,7 @@
                         <br />
                         <div class="col-md-8">
                             <div class="card ">
-                                <h5 class="card-header text-center">Agregar Producto</h5>
+                                <h5 class="card-header text-center">Eliminar Producto</h5>
                                     <div class="card-body">
                                         
                                             <div class="mb-3">
@@ -25,35 +25,14 @@
                                                 <label for="exampleFormControlInput1" class="form-label">Nombre Producto</label>
                                                 <input type="text" class="form-control" id="nombreProducto" placeholder="Coca-cola">
                                               </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Precio</label>
-                                                <input type="number" class="form-control" id="precio" placeholder="36.56">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Unidad</label>
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>Seleccione una unidad</option>
-                                                    <option value="1">Kg</option>
-                                                    <option value="2">Lt</option>
-                                                    <option value="3">Pza</option>
-                                                    <option value="3">Pqte</option>
-                                                  </select>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Id proveedor</label>
-                                                <input type="text" class="form-control" id="proveedor" placeholder="1023" disabled>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Id Categoría de Producto</label>
-                                                <input type="text" class="form-control" id="id_categoria_de_producto" placeholder="1023" disabled>
-                                            </div>
+                                           
                                         
                                         
 
                                         <!-- Boton Guardar Cancelar -->
                                             <div class="mb-3">
                                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                    <button class="btn btn-success me-sm-6" Text="Guardar" type="button">Guardar</button>
+                                                    <button class="btn btn-success me-sm-6" Text="Guardar" type="button">Guardar Cambios</button>
                                                     <button class="btn btn-danger"  Text="Cancelar" type="button">Cancelar</button>
                                                 </div>
                                             </div>

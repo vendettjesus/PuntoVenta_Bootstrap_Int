@@ -11,7 +11,7 @@ namespace Mi_Primer_Web_Bootstrap
 {
 
 
-    public partial class Productos
+    public partial class ProductosAgregar
     {
     }
 }

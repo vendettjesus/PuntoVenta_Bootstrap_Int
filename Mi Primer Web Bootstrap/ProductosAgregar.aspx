@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master"  AutoEventWireup="true" CodeBehind="Productos.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.Productos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductosAgregar.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.ProductosAgregar" %>
 
-            <asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
                     <div class="row">
                         <div class="col-md-2 pb-3">
                             <div class="list-group" id="list-tab" role="tablist">
