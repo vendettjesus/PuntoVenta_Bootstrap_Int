@@ -12,10 +12,10 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="Imagenes/alumnos.jpg" class="d-block" width="1080" height="500" >
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Alumnos</h5>
-                            <p>Sistema para el control de Alumnos</p>
+                        <img src="Imagenes/puntodeventa_default.jpg" class="mx-auto d-block rounded" width="1080" height="500">
+                        <div class="carousel-caption d-block bg-opacity-50 bg-dark rounded">
+                            <h5 class="text-light">Punto de Venta</h5>
+                            <p class="text-light">Sistema para gestión de Punto de venta</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -34,61 +34,48 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon d-none" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon d-none" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
         </div>
     </div>
     <br />
-    <div class="row pb-5">
-        <div class="col-4">
-            <div class="row">
-                <div class="col-12">
+
+    <div class="row">
+                <div class="col-md-4 pb-5">
                     <div class="card">
                         <img src="Imagenes/alumnos2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Modulo Alumnos</h5>
+                            <h5 class="card-title">Modulo Usuarios</h5>
                             <p class="card-text">Modulo para administrar Alumnos, puede dar de Alta, Baja, cambiar datos, o consultarlos...</p>
                             <a href="#" class="btn btn-primary">Ir al modulo</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br />
-        <div class="col-4">
-            <div class="row">
-                <div class="col-12">
+                </div>  
+                <div class="col-md-4 pb-5">
                     <div class="card">
                         <img src="Imagenes/profesor4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Modulo Profesores</h5>
+                            <h5 class="card-title">Modulo Productos</h5>
                             <p class="card-text">En este modulo prodra realizar la gestion de Profesores, Altas, Bajas, Cambios y consultas...</p>
                             <a href="Profesor.aspx" class="btn btn-primary">Ir al modulo</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <br />
-        <div class="col-4">
-            <div class="row">
-                <div class="col-12">
+                <div class="col-md-4 pb-5">
                     <div class="card">
                         <img src="Imagenes/administrativo2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Modulo Administrativos</h5>
+                            <h5 class="card-title">Modulo Ventas</h5>
                             <p class="card-text">Aqui podra gestionar la informacion de los Administrativos, Altas, Bajas, Cambios y Consultas de informacion...</p>
                             <a href="#" class="btn btn-primary">Ir al modulo</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div>          
     </div>
 </asp:Content>
