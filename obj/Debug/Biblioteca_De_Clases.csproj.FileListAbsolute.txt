@@ -1,0 +1,63 @@
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.dll
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.pdb
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csprojAssemblyReference.cache
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.CoreCompileInputs.cache
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.dll
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.pdb
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.dll
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.pdb
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csprojAssemblyReference.cache
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.CoreCompileInputs.cache
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.dll
+C:\Users\Humberto\source\repos\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.pdb
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.AssemblyReference.cache
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.pdb
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.pdb
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\MySql.Data.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\Google.Protobuf.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\ZstdNet.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\BouncyCastle.Crypto.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\System.Memory.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\System.Buffers.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\K4os.Compression.LZ4.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\K4os.Hash.xxHash.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\bin\Debug\MySql.Data.xml
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.CopyComplete
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.pdb
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\MySql.Data.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\Google.Protobuf.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\ZstdNet.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\BouncyCastle.Crypto.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\System.Memory.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\System.Buffers.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\K4os.Compression.LZ4.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\K4os.Hash.xxHash.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\bin\Debug\MySql.Data.xml
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.AssemblyReference.cache
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.CopyComplete
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.pdb
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\Biblioteca_De_Clases.pdb
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\MySql.Data.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\Google.Protobuf.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\ZstdNet.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\BouncyCastle.Crypto.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\System.Memory.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\System.Buffers.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\K4os.Compression.LZ4.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\K4os.Hash.xxHash.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\bin\Debug\MySql.Data.xml
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.AssemblyReference.cache
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.csproj.CopyComplete
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.dll
+D:\UNIVERSIDAD\2020\MAYO-AGOSTO2020\Aplicaciones Web\PROY\Mi Primer Web Bootstrap1.1-PV - copia\Biblioteca_De_Clases\obj\Debug\Biblioteca_De_Clases.pdb
