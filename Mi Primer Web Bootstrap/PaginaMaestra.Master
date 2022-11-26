@@ -22,7 +22,8 @@
 <form id="form1" runat="server">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                
+                <div class="col-10 p-2 text-center">
                     <!-- Navbar content -->
                     <nav class="navbar nav-fill bg-light">
                         <%--<div class="col-10 navbar-collapse collapse show" id="navbarNav">--%>
@@ -56,8 +57,8 @@
 
                         </div>
                         <div class="col-2">
-                            <asp:Button ID="logout" runat="server" Text="Cerrar Sesión" class="btn btn-outline-dark my-4 my-sm-4 float-right" OnClick="logout_Click" />
-
+                            <asp:Button ID="logout" runat="server" Text="Cerrar Sesión" class="btn btn-outline-dark 
+                                my-4 my-sm-4 float-right" OnClick="logout_Click" />
                         </div>
                     </nav>
                 </div>
