@@ -25,15 +25,15 @@
                 
                 <div class="col-10 p-2 text-center">
                     <!-- Navbar content -->
-                    <nav class="navbar nav-fill bg-light">
-                        <%--<div class="col-10 navbar-collapse collapse show" id="navbarNav">--%>
+                    <nav class="nav-fill bg-light">
+                        
                             <ul class="nav nav-tabs">
                                 <li class="nav-item" id="homeMenu" runat="server">
                                     <a class="nav-link" href="#">Ventas
                                     </a>
                                 </li>
-                                <li class="nav-item" id="ProductosMenu" runat="server">
-                                    <a class="nav-link active" href="Productos.aspx">Productos
+                                <li class="nav-item nav-link" id="ProductosMenu" runat="server">
+                                    <a  class="nav-link" href="Productos.aspx">Productos
                                     </a>
                                 </li>
                                 <li class="nav-item" id="InventarioMenu" runat="server">
@@ -49,18 +49,18 @@
                                     </a>
                                 </li>
                                 <li class="nav-item" id="UsuariosMenu" runat="server">
-                                    <a class="nav-link" href="#">Usuarios
+                                    <a class="nav-link" href="Usuarios.aspx">Usuarios
                                     </a>
                                 </li>
                             </ul>
 
-
+                        </nav>
                         </div>
                         <div class="col-2">
                             <asp:Button ID="logout" runat="server" Text="Cerrar Sesión" class="btn btn-outline-dark 
-                                my-4 my-sm-4 float-right" OnClick="logout_Click" />
+                                my-2 my-md-2 float-right" OnClick="Logout_Click" />
                         </div>
-                    </nav>
+                    
                 </div>
             </div>
 
@@ -86,7 +86,7 @@
                     </div>
                 </footer>
             </div>
-        </div>
+        
     </form>
 </body>
 </html>

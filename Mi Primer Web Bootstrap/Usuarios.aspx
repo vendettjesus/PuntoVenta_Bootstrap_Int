@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="Usuario.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.Usuario" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="Usuarios.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.Usuarios" %>
+
+<asp:Content ID="UsuariosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div class="row">
             <div class="col-2 p-1">
                 <div class="list-group" id="list-tab" role="tablist">
@@ -20,11 +19,11 @@
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="name">Id alumno</label>
-                                <asp:TextBox runat="server" type="text" class="form-control" id="idUsuario" disabled></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="id_Usuario" disabled></asp:TextBox>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="name">Nombre</label>
-                                <asp:TextBox runat="server" type="text" class="form-control" id="nombre"></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="usuario"></asp:TextBox>
                             </div>
                             <div class="form-group col-md-4">
                             </div>
@@ -34,7 +33,7 @@
                             </div>
                             <div class="form-group col-md-4">
                                 Apellido Paterno
-                                <asp:TextBox runat="server" type="text" class="form-control" id="apPaterno"></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="id_tipoUsuario"></asp:TextBox>
                             </div>
                             <div class="form-group col-md-4">
                             </div>
@@ -44,7 +43,7 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="apMaterno">Apellido Materno</label>
-                                <asp:TextBox runat="server" type="text" class="form-control" id="apMaterno"></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="id_empleado"></asp:TextBox>
                             </div>
                             <div class="form-group col-md-4">
                             </div>
@@ -57,9 +56,9 @@
                             </div>
                             <div class="form-group col-md-6">
                             </div>
-                            <d|iv class="form-group col-md-3">
+                            <div class="form-group col-md-3">
                                 <asp:Button runat="server" Text="Guardar" class="btn btn-outline-success float-right" OnClick="Unnamed2_Click"/>
-                            </d|iv>
+                            </div>
                             <!-- Modal -->
                             <div class="modal fade" id="guardarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">

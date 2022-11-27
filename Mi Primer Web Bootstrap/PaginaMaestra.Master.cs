@@ -13,41 +13,41 @@ namespace Mi_Primer_Web_Bootstrap
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Permisos permisos = (Permisos)Session["permisos"];
-            //if (permisos != null)
-            //{
-            //    if (permisos.Id_usuario <= 0)
-            //    {
-            //        Response.Redirect("/Login.aspx");
-            //    }
-            //}
-            //else
-            //{
-            //    Response.Redirect("/Login.aspx");
-            //}
+            Permisos permisos = (Permisos)Session["permisos"];
+            if (permisos != null)
+            {
+                if (permisos.Id_usuario <= 0)
+                {
+                    Response.Redirect("/Login.aspx");
+                }
+            }
+            else
+            {
+                Response.Redirect("/Login.aspx");
+            }
             string activepage = Request.RawUrl;
             if (activepage.Contains("Default.aspx"))
             {
-                homeMenu.Attributes.Add("class", "nave-item active");
+                homeMenu.Attributes.Add("class", "nav-link active");
             }
             else if (activepage.Contains("Productos.aspx"))
             {
-                ProductosMenu.Attributes.Add("class", "nave-item active");
+                ProductosMenu.Attributes.Add("class", "nav-link active");
             }
             else if (activepage.Contains("Almacen"))
             {
-                AlmacenMenu.Attributes.Add("class", "nave-item active");
+                AlmacenMenu.Attributes.Add("class", "nav-link active");
             }
             else if (activepage.Contains("Clientes"))
             {
-                ClientesMenu.Attributes.Add("class", "nave-item active");
+                ClientesMenu.Attributes.Add("class", "nav-link active");
             }
-            else if (activepage.Contains("Usuario.aspx"))
+            else if (activepage.Contains("Usuarios.aspx"))
             {
-                UsuariosMenu.Attributes.Add("class", "nave-item active");
+                UsuariosMenu.Attributes.Add("class", "nav-link active");
             }
         }
-        protected void logout_Click(object sender, EventArgs e)
+        protected void Logout_Click(object sender, EventArgs e)
         {
             Session["permisos"] = null;
             Response.Redirect("/Login.aspx");
