@@ -30,20 +30,20 @@
             <br />
             <br />
             <br />
+            <div class="container-md align-content-center">
             <div class="row">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-header text-center alert alert-info">
                             <strong>Bienvenido al Sistema</strong> 
                         </div>
                         <div class="card-body">
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <label for="UserName"><strong>Usuario</strong></label>
                                 <asp:TextBox ID="TextNombre" runat="server" class="form-control" placeholder="Introduzca Su Usuario" required="required"></asp:TextBox>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-4">
                                 <label for="Password"><strong>Contraseña</strong></label>
                                 <asp:TextBox type="password" ID="TextPassword" runat="server" class="form-control" placeholder="Introduzca Su Contraseña" TextMode="Password" required="required"></asp:TextBox>
                             </div>
@@ -51,8 +51,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                </div>
+                <div class="col-sm-4"></div>
+            </div>
             </div>
         </div>
     </form>

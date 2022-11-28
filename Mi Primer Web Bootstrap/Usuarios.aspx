@@ -10,47 +10,39 @@
                     <a class="list-group-item list-group-item-action" id="list-settings-list" href="UsuarioConsulta.aspx">Consultas</a>
                 </div>
             </div>
-            <div class="col-10 p-1">
+            <div class="col-md-8">
                 <div class="card">
                     <h5 class="card-header">Altas de usuarios</h5>
                     <div class="card-body">
-                        <div class="form-row">
-                            <div class="form-group col-md-2">
-                            </div>
-                            <div class="form-group col-md-2">
-                                <label for="name">Id alumno</label>
+                        
+                           
+                            <div class="form-group mb-3">
+                                <label for="name">Id Usuario</label>
                                 <asp:TextBox runat="server" type="text" class="form-control" id="id_Usuario" disabled></asp:TextBox>
                             </div>
-                            <div class="form-group col-md-4">
-                                <label for="name">Nombre</label>
+                            <div class="form-group mb-3">
+                                <label for="name">Usuario</label>
                                 <asp:TextBox runat="server" type="text" class="form-control" id="usuario"></asp:TextBox>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group mb-3">
+                                <label for="Contrasena">Contraseña</label>
+                                <asp:TextBox runat="server" type="password" class="form-control" id="Contrasena"></asp:TextBox>
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                            </div>
-                            <div class="form-group col-md-4">
-                                Apellido Paterno
+                            <div class="form-group mb-3">
+                                <label for="id_tipoUsuario">Id Tipo Usuario</label>
                                 <asp:TextBox runat="server" type="text" class="form-control" id="id_tipoUsuario"></asp:TextBox>
                             </div>
-                            <div class="form-group col-md-4">
+                            <%--<div class="form-group mb-4">
+                            </div>--%>
+                            <%-- elemento vacío --%>
+                        
+                            <div class="form-group mb-3">
                             </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="apMaterno">Apellido Materno</label>
+                            <div class="form-group mb-4">
+                                <label for="id_empleado">Id Empleado</label>
                                 <asp:TextBox runat="server" type="text" class="form-control" id="id_empleado"></asp:TextBox>
                             </div>
-                            <div class="form-group col-md-4">
-                            </div>
-                        </div>
-                        <br />
-                        <br />
-                        <div class="form-row">
+                            <hr />
                             <div class="form-group col-md-3">
                                 <asp:Button runat="server" Text="Borrar Formulario" class="btn btn-outline-danger"/>
                             </div>

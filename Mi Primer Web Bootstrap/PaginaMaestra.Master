@@ -29,10 +29,10 @@
                         
                             <ul class="nav nav-tabs">
                                 <li class="nav-item" id="homeMenu" runat="server">
-                                    <a class="nav-link" href="#">Ventas
+                                    <a class="nav-link" href="Default.aspx">Ventas
                                     </a>
                                 </li>
-                                <li class="nav-item nav-link" id="ProductosMenu" runat="server">
+                                <li class="nav-item" id="ProductosMenu" runat="server">
                                     <a  class="nav-link" href="Productos.aspx">Productos
                                     </a>
                                 </li>
@@ -75,12 +75,12 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid pt-5 fixed-bottom">
-                <footer class="footer mt-auto bg-dark">
+            <div class="container pt-5">
+                <footer class="footer mt-auto bg-dark fixed-bottom opacity-50">
                     <div class="container">
                         <div class="row">
-                            <div class="col-12 pt-1">
-                                <p class="text-md-center text-muted">Sistema Punto de Venta @Manzo&4F</p>
+                            <div class="col-12 p-1">
+                                <p class="text-md-center text-muted">Sistema Punto de Venta @Manzo&4E</p>
                             </div>
                         </div>
                     </div>
