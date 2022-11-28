@@ -16,28 +16,55 @@
                         <br />
                         <div class="col-md-8 p-1">
                             <div class="card ">
-                                <h5 class="card-header text-center">Eliminar Producto</h5>
+                                <h5 class="card-header text-center alert alert-primary">Consulta Producto</h5>
                                     <div class="card-body">
                                         
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Id produco</label>
-                                                <input type="text" class="form-control" id="id_producto" placeholder="1023" disabled>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Nombre Producto</label>
-                                                <input type="text" class="form-control" id="nombreProducto" placeholder="Coca-cola">
-                                              </div>
+                                             <div class="row">
+                                    <div class="col-md-10">
+                                        <!--ETIQUETA BUsQUEDA POR ID-->
+                                        <label for="name">Id producto</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 pb-2">
+                                        <!--TEXT BOX BUsQUEDA POR ID-->
+                                        <asp:TextBox runat="server" type="text" class="form-control float-right" ID="buscaID"></asp:TextBox>
+                                    </div>
+                                    <div class="col-md-2 pb-3">
+                                        <!--BOTON BUsQUEDA POR ID-->
+                                        <asp:Button runat="server" Text="Buscar por ID" class="btn btn-primary"/>
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="row">
+                                    
+                                    <div class="col-md-10 pb-2">
+                                        <!--ETIQUETA BUsQUEDA POR NOMBRE-->
+                                        <label for="name">Nombre Producto</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8 pb-2">
+                                        <!--TEXTBOX BUsQUEDA POR NOMBRE-->
+                                        <asp:TextBox runat="server" type="text" class="form-control float-right" ID="buscaNombre" ></asp:TextBox>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <!--BOTON BUsQUEDA POR NOMBRE-->
+                                        <asp:Button runat="server" Text="Buscar por Nombre" class="btn btn-primary float-left" />
+                                    </div>
+                                </div>
                                            
                                         
                                         
 
                                         <!-- Boton Guardar Cancelar -->
-                                            <div class="mb-3">
+                                          <%--  <div class="mb-3">
                                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                    <button class="btn btn-success me-sm-6" Text="Guardar" type="button">Guardar Cambios</button>
+                                                    <button class="btn btn-primary me-sm-6" Text="Guardar" type="button">Guardar</button>
                                                     <button class="btn btn-danger"  Text="Cancelar" type="button">Cancelar</button>
                                                 </div>
-                                            </div>
+                                            </div>--%>
                                             
                                         
 

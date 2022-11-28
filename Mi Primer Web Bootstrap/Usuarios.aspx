@@ -13,7 +13,7 @@
             </div>
             <div class="col-md-8 p-1">
                 <div class="card">
-                    <h5 class="card-header text-center">Agregar Usuario</h5>
+                    <h5 class="card-header text-center alert alert-primary">Agregar Usuario</h5>
                     <div class="card-body">
                         
                            

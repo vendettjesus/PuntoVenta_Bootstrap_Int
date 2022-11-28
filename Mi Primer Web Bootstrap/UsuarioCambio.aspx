@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-8 p-1">
                 <div class="card">
-                    <h5 class="card-header text-center">Modificar Usuario</h5>
+                    <h5 class="card-header text-center alert alert-primary">Modificar Usuario</h5>
                     <div class="card-body">
                         
                             

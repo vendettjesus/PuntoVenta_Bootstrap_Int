@@ -15,7 +15,7 @@
                         <br />
                         <div class="col-md-8 p-1">
                             <div class="card ">
-                                <h5 class="card-header text-center">Modificar Producto</h5>
+                                <h5 class="card-header text-center alert alert-primary">Modificar Producto</h5>
                                     <div class="card-body">
                                         
                                             <div class="mb-3">
@@ -54,7 +54,7 @@
                                         <!-- Boton Guardar Cancelar -->
                                             <div class="mb-3">
                                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                    <button class="btn btn-success me-sm-6" Text="Guardar" type="button">Guardar</button>
+                                                    <button class="btn btn-primary me-sm-6" Text="Guardar" type="button">Guardar</button>
                                                     <button class="btn btn-danger"  Text="Cancelar" type="button">Cancelar</button>
                                                 </div>
                                             </div>

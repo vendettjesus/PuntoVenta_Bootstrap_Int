@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-8 p-1">
                 <div class="card">
-                    <h5 class="card-header text-center">Consultar Usuario</h5>
+                    <h5 class="card-header text-center alert alert-primary">Consultar Usuario</h5>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12">
