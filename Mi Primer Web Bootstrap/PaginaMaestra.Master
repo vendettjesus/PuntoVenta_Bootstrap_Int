@@ -23,13 +23,18 @@
         <div class="container">
             <div class="row">
                 
-                <div class="col-10 p-2 text-center">
+                <div class="col-md-10 text-center">
                     <!-- Navbar content -->
-                    <nav class="nav-fill bg-light">
-                        
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="Default.aspx">PuntoVenta</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" runat="server">
+                        <span class="navbar-toggler-icon"/>
+                            </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="nav nav-tabs">
                                 <li class="nav-item" id="homeMenu" runat="server">
-                                    <a class="nav-link" href="Default.aspx">Ventas
+                                    <a class="nav-link" href="Ventas.aspx">Ventas
                                     </a>
                                 </li>
                                 <li class="nav-item" id="ProductosMenu" runat="server">
@@ -37,15 +42,15 @@
                                     </a>
                                 </li>
                                 <li class="nav-item" id="InventarioMenu" runat="server">
-                                    <a class="nav-link" href="#">Inventario
+                                    <a class="nav-link" href="Inventario.aspx">Inventario
                                     </a>
                                 </li>
                                 <li class="nav-item" id="AlmacenMenu" runat="server">
-                                    <a class="nav-link" href="#">Almacen
+                                    <a class="nav-link" href="Almacen.aspx">Almacen
                                     </a>
                                 </li>
                                 <li class="nav-item" id="ClientesMenu" runat="server">
-                                    <a class="nav-link" href="#">Clientes
+                                    <a class="nav-link" href="Clientes.aspx">Clientes
                                     </a>
                                 </li>
                                 <li class="nav-item" id="UsuariosMenu" runat="server">
@@ -53,10 +58,11 @@
                                     </a>
                                 </li>
                             </ul>
-
+                            </div>
+                          </div>
                         </nav>
                         </div>
-                        <div class="col-2">
+                        <div class="col-md-2">
                             <asp:Button ID="logout" runat="server" Text="Cerrar Sesión" class="btn btn-outline-dark 
                                 my-2 my-md-2 float-right" OnClick="Logout_Click" />
                         </div>

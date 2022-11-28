@@ -123,6 +123,10 @@
     <Content Include="UsuarioBaja.aspx" />
     <Content Include="UsuarioCambio.aspx" />
     <Content Include="UsuarioConsulta.aspx" />
+    <Content Include="Clientes.aspx" />
+    <Content Include="Almacen.aspx" />
+    <Content Include="Inventario.aspx" />
+    <Content Include="Ventas.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Otros Elementos\admin.aspx" />
     <Content Include="PaginaMaestra.Master" />
@@ -347,6 +351,34 @@
     </Compile>
     <Compile Include="UsuarioConsulta.aspx.designer.cs">
       <DependentUpon>UsuarioConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen.aspx.cs">
+      <DependentUpon>Almacen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almacen.aspx.designer.cs">
+      <DependentUpon>Almacen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.aspx.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventario.aspx.designer.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.aspx.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas.aspx.designer.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

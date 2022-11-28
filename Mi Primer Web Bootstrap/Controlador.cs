@@ -57,7 +57,7 @@ namespace Mi_Primer_Web_Bootstrap
         public Biblioteca_De_Clases.Usuarios BuscarUsuarioNombre(string nombre)
         {
             string query = "Select * from " +
-            "alumno a Where u.nombre ='" + nombre + "'";
+            "Usuarios u Where u.usuario ='" + nombre + "'";
             //DEBE AGREGAR EL using System.Data;
             DataTable dt = conexion.ConsultarRegistrosMySQL(query);
             Biblioteca_De_Clases.Usuarios u = new Biblioteca_De_Clases.Usuarios();
@@ -77,26 +77,26 @@ namespace Mi_Primer_Web_Bootstrap
 }
 // Todo Esto Va En Usuario (ALTAS)
 // Evento Del Boton
-// Biblioteca_De_Clases.Usuario u= new Biblioteca_De_Clases.Usuario();
+// Biblioteca_De_Clases.Usuario u= new Biblioteca_De_Clases.Usuarios();
 
-//u.Nombre = Nombre.Text;
-//u.Contraseña = Contraseña. Text;
+//u.Usuario = Usuario.Text;
+//u.Contrasena = Contrasena.Text;
 //u.Usuario = Usuario. Text;
 // Instanciar El Controlador
 // Controlador c = new Controlador();
 // c.InsertarUsuario(u);
-// nombre.Text = "";
-//contraseña.Text = 
+// usuario.Text = "";
+//contrasena.Text = 
 //
 //
 
 //Usuario Bajas
 // Evento Doble Click
 //protected void
-// public BibliotecaClases.Usuario BuscarUsuarioID(int idUsuario)
+// public BibliotecaClases.Usuarios BuscarUsuarioID(int id_Usuario)
 //{
-   // string query = "Select u.idUsuario, u.nombre, u.usuario from " +
-    //"Usuario u Where u.idUsuario =" + idUsuario;
+   // string query = "Select u.id_usuario, u.usuario, u.usuario from " +
+    //"Usuarios u Where u.id_Usuario =" + id_Usuario;
     //DEBE AGREGAR EL using System.Data;
     //DataTable dt = conexion.ConsultarRegistros(query);
     //BibliotecaClases.Usuario u = new BibliotecaClases.Usuario();

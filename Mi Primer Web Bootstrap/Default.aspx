@@ -55,7 +55,7 @@
 </svg>
                     <h5 class="card-title">Modulo Usuarios</h5>
                     <p class="card-text">Administración y consulta de Usuarios.</p>
-                    <a href="#" class="btn btn-primary">Ir al modulo</a>
+                    <a href="Usuarios.aspx" class="btn btn-primary">Ir al modulo</a>
                 </div>
             </div>
         </div>  
@@ -67,7 +67,7 @@
 </svg>
                     <h5 class="card-title">Modulo Productos</h5>
                     <p class="card-text">Agregar, Modificar o Eliminar productos del Sistema.</p>
-                    <a href="Profesor.aspx" class="btn btn-primary">Ir al modulo</a>
+                    <a href="Productos.aspx" class="btn btn-primary">Ir al modulo</a>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
 </svg>
                     <h5 class="card-title">Modulo Ventas</h5>
                     <p class="card-text">Aquí puede realizar consultas de las ventas</p>
-                    <a href="#" class="btn btn-primary align-items-center">Ir al modulo</a>
+                    <a href="Default.aspx" class="btn btn-primary align-items-center">Ir al modulo</a>
                 </div>
             </div>
         </div>          

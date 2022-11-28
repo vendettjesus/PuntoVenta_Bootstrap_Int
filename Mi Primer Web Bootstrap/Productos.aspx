@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master"  AutoEventWireup="true" CodeBehind="Productos.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.Productos" %>
 
 <asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div class="row">
-            <div class="col-md-2 p-3">
+    <div class="container">
+    <div class="row">
+            <div class="col-md-2 p-1">
                 <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-home-list" href="ProductosAgregar.aspx" role="tab" aria-controls="home">Agregar</a>
                     <a class="list-group-item list-group-item-action" id="list-profile-list"  href="ProductosEliminar.aspx" role="tab" aria-controls="profile">Eliminar</a>
@@ -12,13 +13,13 @@
             </div>
                         
             <br />
-            <div class="col-md-8">
+            <div class="col-md-8 p-1">
                 <div class="card ">
                     <h5 class="card-header text-center">Agregar Producto</h5>
                         <div class="card-body">
                                         
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Id produco</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Id producto</label>
                                     <input type="text" class="form-control" id="id_producto" placeholder="1023" disabled>
                                 </div>
                                 <div class="mb-3">
@@ -84,4 +85,5 @@
                     </div>
                 </div>
             </div>
+        </div>    
 </asp:Content>

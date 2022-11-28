@@ -4,60 +4,53 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-2 p-1">
+            <div class="col-md-2 p-1">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action" id="list-home-list" href="Usuario.aspx" role="tab" aria-controls="home">Altas</a>
-                    <a class="list-group-item list-group-item-action active" id="list-profile-list"  href="UsuarioBaja.aspx" role="tab" aria-controls="profile">Bajas</a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" href="UsuarioCambio.aspx" role="tab" aria-controls="messages">Cambios</a>
+                    <a class="list-group-item list-group-item-action" id="list-home-list" href="Usuarios.aspx" role="tab" aria-controls="agrega">Agregar</a>
+                    <a class="list-group-item list-group-item-action active" id="list-profile-list"  href="UsuarioBaja.aspx" role="tab" aria-controls="elimina">Eliminar</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" href="UsuarioCambio.aspx" role="tab" aria-controls="messages">Modificar</a>
                     <a class="list-group-item list-group-item-action" id="list-settings-list" href="UsuarioConsulta.aspx">Consultas</a>
                 </div>
             </div>
-            <div class="col-10 p-1">
+            <div class="col-md-8 p-1">
                 <div class="card">
-                    <h5 class="card-header">Baja de usuarios</h5>
+                    <h5 class="card-header text-center">Eliminar Usuario</h5>
                     <div class="card-body">
-                        <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <div class="row">
-                                    <div class="col-12">
+                        <div class="row">
+                                    <div class="col-md-10">
                                         <!--ETIQUETA BUsQUEDA POR ID-->
-                                        <label for="name">Id alumno</label>
+                                        <label for="name">Id usuario</label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-md-8 pb-2">
                                         <!--TEXT BOX BUsQUEDA POR ID-->
                                         <asp:TextBox runat="server" type="text" class="form-control float-right" ID="buscaID"></asp:TextBox>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-2 pb-3">
                                         <!--BOTON BUsQUEDA POR ID-->
-                                        <asp:Button runat="server" Text="Buscar por ID" class="btn btn-primary float-left" ID="btnBuscaID" OnClick="btnBuscaID_Click"/>
+                                        <asp:Button runat="server" Text="Buscar por ID" class="btn btn-primary"/>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group col-md-8">
+                            
+                            
                                 <div class="row">
-                                    <div class="col-1">
-                                    </div>
-                                    <div class="col-11">
+                                    
+                                    <div class="col-md-10 pb-2">
                                         <!--ETIQUETA BUsQUEDA POR NOMBRE-->
                                         <label for="name">Nombre</label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-1">
-                                    </div>
-                                    <div class="col-7">
+                                    <div class="col-md-8 pb-2">
                                         <!--TEXTBOX BUsQUEDA POR NOMBRE-->
                                         <asp:TextBox runat="server" type="text" class="form-control float-right" ID="buscaNombre" ></asp:TextBox>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-2">
                                         <!--BOTON BUsQUEDA POR NOMBRE-->
-                                        <asp:Button runat="server" Text="Buscar por Nombre" class="btn btn-primary float-left" ID="btnBuscaNombre" OnClick="btnBuscaNombre_Click"/>
+                                        <asp:Button runat="server" Text="Buscar por Usuario" class="btn btn-primary float-left" />
                                     </div>
                                 </div>
-                            </div>
-                        </div>
                         <!--LINEA DIVISORA-->
                         <hr class="my-4">
                         <div class="form-row">
@@ -67,13 +60,13 @@
                                 <!--ETIQUETA DEL CAMPO ID USUARIO-->
                                 <label for="name">Id Usuario</label>
                                 <!--TEXTBOX DEL CAMPO ID USUARIO-->
-                                <asp:TextBox runat="server" type="text" class="form-control" id="id_usuario" disabled></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="id_usuario" disabled="true"></asp:TextBox>
                             </div>
                             <div class="form-group col-md-4">
                                 <!--ETIQUETA DEL CAMPO NOMBRE -->
                                 <label for="name">Usuario</label>
                                 <!--TEXTBOX DEL CAMPO NOMBRE -->
-                                <asp:TextBox runat="server" type="text" class="form-control" id="usuario" disabled></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="usuario" disabled="true"></asp:TextBox>
                             </div>
                             <div class="form-group col-md-4">
                             </div>
@@ -85,13 +78,13 @@
                                 <!--ETIQUETA DEL CAMPO USUARIO-->
                                 <label for="id_tipoUsuario">Id tipo usuario</label>
                                 <!--TEXTBOX DEL CAMPO USUARIO-->
-                                <asp:TextBox runat="server" type="text" class="form-control" id="id_tipoUsuario" disabled></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="id_tipoUsuario" disabled="true"></asp:TextBox>
                             </div>
                             <div class="form-group col-md-4">
                                 <!--ETIQUETA DEL CAMPO USUARIO-->
                                 <label for="id_empleado">id empleado</label>
                                 <!--TEXTBOX DEL CAMPO USUARIO-->
-                                <asp:TextBox runat="server" type="text" class="form-control" id="id_empleado" disabled></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="id_empleado" disabled="true"></asp:TextBox>
                             </div>
                             <div class="form-group col-md-2">
                             </div>

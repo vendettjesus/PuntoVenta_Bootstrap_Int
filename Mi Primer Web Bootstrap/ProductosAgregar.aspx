@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductosAgregar.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.ProductosAgregar" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="ProductosAgregar.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.ProductosAgregar" %>
 
 <asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
                     <div class="row">

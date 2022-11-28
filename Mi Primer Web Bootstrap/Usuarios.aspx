@@ -1,24 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="Usuarios.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.Usuarios" %>
 
 <asp:Content ID="UsuariosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="container">
         <div class="row">
-            <div class="col-2 p-1">
+            <div class="col-md-2 p-1">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-home-list" href="Usuario.aspx" role="tab" aria-controls="home">Altas</a>
-                    <a class="list-group-item list-group-item-action" id="list-profile-list"  href="UsuarioBaja.aspx" role="tab" aria-controls="profile">Bajas</a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" href="UsuarioCambio.aspx" role="tab" aria-controls="messages">Cambios</a>
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" href="Usuarios.aspx" role="tab" aria-controls="home">Agregar</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list"  href="UsuarioBaja.aspx" role="tab" aria-controls="profile">Eliminar</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" href="UsuarioCambio.aspx" role="tab" aria-controls="messages">Modificar</a>
                     <a class="list-group-item list-group-item-action" id="list-settings-list" href="UsuarioConsulta.aspx">Consultas</a>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 p-1">
                 <div class="card">
-                    <h5 class="card-header">Altas de usuarios</h5>
+                    <h5 class="card-header text-center">Agregar Usuario</h5>
                     <div class="card-body">
                         
                            
                             <div class="form-group mb-3">
                                 <label for="name">Id Usuario</label>
-                                <asp:TextBox runat="server" type="text" class="form-control" id="id_Usuario" disabled></asp:TextBox>
+                                <asp:TextBox runat="server" type="text" class="form-control" id="id_Usuario" disabled="true"></asp:TextBox>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="name">Usuario</label>

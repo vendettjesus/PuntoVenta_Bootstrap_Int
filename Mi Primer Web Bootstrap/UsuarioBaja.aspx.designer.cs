@@ -24,15 +24,6 @@ namespace Mi_Primer_Web_Bootstrap
         protected global::System.Web.UI.WebControls.TextBox buscaID;
 
         /// <summary>
-        /// Control btnBuscaID.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscaID;
-
-        /// <summary>
         /// Control buscaNombre.
         /// </summary>
         /// <remarks>
@@ -40,15 +31,6 @@ namespace Mi_Primer_Web_Bootstrap
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox buscaNombre;
-
-        /// <summary>
-        /// Control btnBuscaNombre.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscaNombre;
 
         /// <summary>
         /// Control id_usuario.

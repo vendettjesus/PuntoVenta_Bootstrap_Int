@@ -28,23 +28,27 @@ namespace Mi_Primer_Web_Bootstrap
             string activepage = Request.RawUrl;
             if (activepage.Contains("Default.aspx"))
             {
-                homeMenu.Attributes.Add("class", "nav-link active");
+                homeMenu.Attributes.Add("class", "");
             }
+            //else if (activepage.Contains("Ventas.aspx"))
+            //{
+            //    VentasMenu.Attributes.Add("class", "nav-link active");
+            //}
             else if (activepage.Contains("Productos.aspx"))
             {
-                ProductosMenu.Attributes.Add("class", "nav-link active");
+                ProductosMenu.Attributes.Add("class", "");
             }
             else if (activepage.Contains("Almacen"))
             {
-                AlmacenMenu.Attributes.Add("class", "nav-link active");
+                AlmacenMenu.Attributes.Add("class", "");
             }
             else if (activepage.Contains("Clientes"))
             {
-                ClientesMenu.Attributes.Add("class", "nav-link active");
+                ClientesMenu.Attributes.Add("class", "");
             }
             else if (activepage.Contains("Usuarios.aspx"))
             {
-                UsuariosMenu.Attributes.Add("class", "nav-link active");
+                UsuariosMenu.Attributes.Add("class", "");
             }
         }
         protected void Logout_Click(object sender, EventArgs e)
