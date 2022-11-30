@@ -56,5 +56,6 @@ namespace Mi_Primer_Web_Bootstrap
             Session["permisos"] = null;
             Response.Redirect("/Login.aspx");
         }
+
     }
 }

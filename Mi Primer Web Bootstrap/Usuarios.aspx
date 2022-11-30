@@ -26,7 +26,7 @@
                                 <asp:TextBox runat="server" type="text" class="form-control" id="usuario"></asp:TextBox>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="Contrasena">Contraseña</label>
+                                <label for="contrasena">Contraseña</label>
                                 <asp:TextBox runat="server" type="password" class="form-control" id="Contrasena"></asp:TextBox>
                             </div>
                             <div class="form-group mb-3">

@@ -114,6 +114,40 @@ namespace Biblioteca_De_Clases
             }
         }
 
+        
+        //public string AltaUsuario(Biblioteca_De_Clases.Usuarios usuarios)
+        //{
+        //    string msg = "";
+        //    if (usuario != null)
+        //    {
+        //        AbrirConexionMySQL();
+        //        MySqlCommand cmd = new MySqlCommand("sp_usuario", miConn);
+        //        cmd.CommandType = CommandType.StoredProcedure;
+        //        cmd.Parameters.Add("id_usuario", MySqlDbType.Int32).Value = 0;
+        //        cmd.Parameters.AddWithValue("_usuario", usuarios.Usuario);
+        //        cmd.Parameters.AddWithValue("_id_tipoUsuario", usuarios.Id_tipoUsuario);
+        //        cmd.Parameters.AddWithValue("_id_empleado", usuarios.Id_empleado);
+        //        cmd.Parameters.AddWithValue("_contrasena", usuarios.Contrasena);
+        //        cmd.Parameters.Add("accion", MySqlDbType.VarChar).Value = "nuevo";
+
+
+        //        miConn.Open();
+        //        int i = cmd.ExecuteNonQuery();
+        //        miConn.Close();
+
+        //        if (i > 0)
+        //        {
+        //            msg = "Los datos se han guardado con éxito";
+        //        }
+        //        else
+        //        {
+        //            msg = "Error, verifique los datos";
+        //        }
+
+        //    }
+        //    return msg;
+        //}
+
         ////Cadena De Conexion
         //private string cadenaConexion = "Data Source= sqlserver2020.cdpi2ajkypfw.us-east-2.rds.amazonaws.com; " +
         //    "initial catalog=ControlEscolar; user id= sqlserver; password= tics.2020;";

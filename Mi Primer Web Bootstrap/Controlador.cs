@@ -73,6 +73,41 @@ namespace Mi_Primer_Web_Bootstrap
             string query = "DELETE FROM Usuarios WHERE id_usuario =" + Id_usuario.ToString();
             return conexion.EjecutarQueryMySQL(query);            
         }
+
+
+        //public Biblioteca_De_Clases.Usuarios AltaUsuario(string usuarios)
+        //{
+        //string msg = "";
+        //    if (usuario != null)
+        //    {
+        //        AbrirConexionMySQL();
+        //MySqlCommand cmd = new MySqlCommand("sp_usuario", miConn);
+        //cmd.CommandType = CommandType.StoredProcedure;
+        //        cmd.Parameters.Add("id_usuario", MySqlDbType.Int32).Value = 0;
+        //        cmd.Parameters.AddWithValue("_usuario", usuarios.Usuario);
+        //        cmd.Parameters.AddWithValue("_id_tipoUsuario", usuarios.Id_tipoUsuario);
+        //        cmd.Parameters.AddWithValue("_id_empleado", usuarios.Id_empleado);
+        //        cmd.Parameters.AddWithValue("_contrasena", usuarios.Contrasena);
+        //        cmd.Parameters.Add("accion", MySqlDbType.VarChar).Value = "nuevo";
+
+
+        //        miConn.Open();
+        //        int i = cmd.ExecuteNonQuery();
+        //miConn.Close();
+
+        //        if (i > 0)
+        //        {
+        //            msg = "Los datos se han guardado con éxito";
+        //        }
+        //        else
+        //        {
+        //            msg = "Error, verifique los datos";
+        //        }
+
+        //    }
+        //    return msg;
+        //}
+
     }
 }
 // Todo Esto Va En Usuario (ALTAS)
@@ -93,7 +128,7 @@ namespace Mi_Primer_Web_Bootstrap
 //Usuario Bajas
 // Evento Doble Click
 //protected void
-// public BibliotecaClases.Usuarios BuscarUsuarioID(int id_Usuario)
+// public BibliotecaClases.Usuarios BuscarUsuarioID(int id_usuario)
 //{
    // string query = "Select u.id_usuario, u.usuario, u.usuario from " +
     //"Usuarios u Where u.id_Usuario =" + id_Usuario;
@@ -101,7 +136,7 @@ namespace Mi_Primer_Web_Bootstrap
     //DataTable dt = conexion.ConsultarRegistros(query);
     //BibliotecaClases.Usuario u = new BibliotecaClases.Usuario();
 
-    //u.IdUsuario = Convert.ToInt32(dt.Rows[0]["idUsuario"]);
+    //u.Id_usuario = Convert.ToInt32(dt.Rows[0]["id_usuario"]);
     //u.Nombre = dt.Rows[0]["nombre"].ToString();
     //u.Usuario_ = dt.Rows[0]["usuario"].ToString();
 

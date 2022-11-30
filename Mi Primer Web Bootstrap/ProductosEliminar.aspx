@@ -33,7 +33,7 @@
                                         <!-- Boton Guardar Cancelar -->
                                             <div class="mb-3">
                                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                    <button class="btn btn-primary me-sm-6" Text="Guardar" type="button">Guardar</button>
+                                                    <button runat="server" id="btnEliminiarProd" class="btn btn-primary me-sm-6" Text="Guardar" type="button" onclick="btnEliminarProd">Guardar</button>
                                                     <button class="btn btn-danger"  Text="Cancelar" type="button">Cancelar</button>
                                                 </div>
                                             </div>

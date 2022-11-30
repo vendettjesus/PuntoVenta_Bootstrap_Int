@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master" AutoEventWireup="true" CodeBehind="ProductosAgregar.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.ProductosAgregar" %>
 
 <asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-                    <div class="container">
+            <div class="container">
     <div class="row">
             <div class="col-md-2 p-1">
                 <div class="list-group" id="list-tab" role="tablist">
@@ -14,7 +14,7 @@
                         
             <br />
             <div class="col-md-8 p-1">
-                <div class="card ">
+                <div class="card">
                     <h5 class="card-header text-center alert alert-primary">Agregar Producto</h5>
                         <div class="card-body">
                                         
@@ -42,11 +42,11 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Id proveedor</label>
-                                    <input type="text" class="form-control" id="proveedor" placeholder="1023" disabled>
+                                    <input type="text" class="form-control" id="proveedor" placeholder="1023">
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Id Categoría de Producto</label>
-                                    <input type="text" class="form-control" id="id_categoria_de_producto" placeholder="1023" disabled>
+                                    <input type="text" class="form-control" id="id_categoria_de_producto" placeholder="1023">
                                 </div>
                                         
                                         
@@ -54,8 +54,8 @@
                             <!-- Boton Guardar Cancelar -->
                                 <div class="mb-3">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <button class="btn btn-primary me-sm-6" Text="Guardar" type="button">Guardar</button>
-                                        <button class="btn btn-danger"  Text="Cancelar" type="button">Cancelar</button>
+                                        <asp:Button runat="server" ID="BtnAgregarProd" class="btn btn-primary me-sm-6" Text="Guardar" type="button" OnClick="BtnAgregarProd_Click"></asp:Button>
+                                        <button class="btn btn-danger"  Text="Cancelar" type="button" action="clear">Cancelar</button>
                                     </div>
                                 </div>
                                             

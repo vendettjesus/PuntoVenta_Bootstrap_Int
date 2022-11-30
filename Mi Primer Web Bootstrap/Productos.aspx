@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/PaginaMaestra.Master"  AutoEventWireup="true" CodeBehind="Productos.aspx.cs" Inherits="Mi_Primer_Web_Bootstrap.Productos" %>
 
 <asp:Content ID="ProductosMenu" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
+    <div class="container"">
     <div class="row">
             <div class="col-md-2 p-1">
                 <div class="list-group" id="list-tab" role="tablist">
@@ -13,7 +13,7 @@
             </div>
                         
             <br />
-            <div class="col-md-8 p-1">
+            <div class="col-md-8 p-1 collapse">
                 <div class="card ">
                     <h5 class="card-header text-center alert alert-primary">Agregar Producto</h5>
                         <div class="card-body">

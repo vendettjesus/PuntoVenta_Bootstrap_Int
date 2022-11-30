@@ -21,11 +21,13 @@ namespace Mi_Primer_Web_Bootstrap
             u.Usuario = usuario.Text;
             u.Id_tipoUsuario = Convert.ToInt32(id_tipoUsuario.Text);
             u.Id_empleado = Convert.ToInt32(id_empleado.Text);
+            u.Contrasena = Contrasena.Text;
             Controlador c = new Controlador();
             c.InsertarUsuario(u);
             usuario.Text = "";
             id_tipoUsuario.Text = "";
             id_empleado.Text = "";
+            Contrasena.Text = "";
         }
     }
 }
