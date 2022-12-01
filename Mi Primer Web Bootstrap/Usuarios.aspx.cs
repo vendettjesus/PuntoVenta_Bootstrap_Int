@@ -40,7 +40,7 @@ namespace Mi_Primer_Web_Bootstrap
                     sqlCmd.ExecuteNonQuery();
 
 
-                    lblSuccessMessage.Text = "El producto se ha agregado con exito!";
+                    lblSuccessMessage.Text = "El Usuario se agregó con éxito!";
 
                 }
             }

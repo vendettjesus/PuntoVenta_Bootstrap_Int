@@ -15,9 +15,14 @@
                 <div class="card">
                     <h5 class="card-header text-center alert alert-primary">Agregar Usuario</h5>
                     <div class="card-body">
-                        
+                            <center>
+                            <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green" />
+                            </center>
+                            <center>
+                            <asp:Label Text="" ID="lblErrorMessage" runat="server" ForeColor="Red" />
+                            </center>
                            
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-3 collapse">
                                 <label for="name">Id Usuario</label>
                                 <asp:TextBox runat="server" type="text" class="form-control" id="id_Usuario" disabled="true"></asp:TextBox>
                             </div>
@@ -33,9 +38,6 @@
                                 <label for="id_tipoUsuario">Id Tipo Usuario</label>
                                 <asp:TextBox runat="server" type="text" class="form-control" id="id_tipoUsuario"></asp:TextBox>
                             </div>
-                            <%--<div class="form-group mb-4">
-                            </div>--%>
-                            <%-- elemento vacío --%>
                         
                             <div class="form-group mb-3">
                             </div>
@@ -54,12 +56,7 @@
                                         <asp:Button ID="BtnCancelar" runat="server" class="btn btn-danger"  Text="Cancelar" type="button" OnClick="BtnCancelar_Click"></asp:Button>
                                     </div>
                                 </div>
-                                    <center>
-                                    <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green" />
-                                    </center>
-                                    <center>
-                                    <asp:Label Text="" ID="lblErrorMessage" runat="server" ForeColor="Red" />
-                                    </center>
+                                    
                             <!-- Modal -->
                             
                             <br />

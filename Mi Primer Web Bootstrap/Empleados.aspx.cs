@@ -44,11 +44,11 @@ namespace Mi_Primer_Web_Bootstrap
 
                 }
             }
-            catch(Exception ex)
+            catch
             {
 
-                //lblErrorMessage.Text = "Verifica que los Datos sean correctos!";
-                lblErrorMessage.Text = ex.Message;
+                lblErrorMessage.Text = "Verifica que los Datos sean correctos!";
+                //lblErrorMessage.Text = ex.Message;
             }
         }
 

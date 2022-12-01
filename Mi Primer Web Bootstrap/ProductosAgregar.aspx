@@ -17,7 +17,12 @@
                 <div class="card">
                     <h5 class="card-header text-center alert alert-primary">Agregar Producto</h5>
                         <div class="card-body">
-                                        
+                                <center>
+                                <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green" />
+                                </center>
+                                <center>
+                                <asp:Label Text="" ID="lblErrorMessage" runat="server" ForeColor="Red" />
+                                </center>       
                                 <div class="collapse">
                                     <label for="id_producto" class="form-label">Id producto</label>
                                     <input runat="server" type="text" class="form-control" id="id_producto" placeholder="">
@@ -66,12 +71,7 @@
                                         <asp:Button ID="BtnCancelar" runat="server" class="btn btn-danger"  Text="Cancelar" type="button" OnClick="BtnCancelar_Click"></asp:Button>
                                     </div>
                                 </div>
-                                    <center>
-                                    <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green" />
-                                    </center>
-                                    <center>
-                                    <asp:Label Text="" ID="lblErrorMessage" runat="server" ForeColor="Red" />
-                                    </center>
+                                    
                             <!-- Modal -->
                                 <div class="modal fade" id="myModal" role="dialog">
                                     <div class="modal-dialog">
