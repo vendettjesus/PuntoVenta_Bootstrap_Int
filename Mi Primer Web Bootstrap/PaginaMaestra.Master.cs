@@ -50,6 +50,10 @@ namespace Mi_Primer_Web_Bootstrap
             {
                 UsuariosMenu.Attributes.Add("class", "");
             }
+            else if (activepage.Contains("Empleados.aspx"))
+            {
+                EmpleadosMenu.Attributes.Add("class", "");
+            }
         }
         protected void Logout_Click(object sender, EventArgs e)
         {

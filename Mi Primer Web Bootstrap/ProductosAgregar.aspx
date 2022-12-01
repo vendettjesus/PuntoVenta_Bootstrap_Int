@@ -18,35 +18,43 @@
                     <h5 class="card-header text-center alert alert-primary">Agregar Producto</h5>
                         <div class="card-body">
                                         
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Id producto</label>
-                                    <input type="text" class="form-control" id="id_producto" placeholder="1023" disabled>
+                                <div class="collapse">
+                                    <label for="id_producto" class="form-label">Id producto</label>
+                                    <input runat="server" type="text" class="form-control" id="id_producto" placeholder="">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Nombre Producto</label>
-                                    <input type="text" class="form-control" id="nombreProducto" placeholder="Coca-cola">
+                                    <label for="nombre_producto" class="form-label">Nombre Producto</label>
+                                    <input runat="server" type="text" class="form-control" id="nombre_producto" placeholder="Coca-cola" required="required">
                                     </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Precio</label>
-                                    <input type="number" class="form-control" id="precio" placeholder="36.56">
+                                    <label for="precio" class="form-label">Precio</label>
+                                    <input runat="server" type="number" class="form-control" id="precio" placeholder="36.56" required>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Unidad</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <label for="unidad_medida" class="form-label">Unidad</label>
+                                    <select runat="server" class="form-select" id="unidad_medida" aria-label="Default select example">
                                         <option selected>Seleccione una unidad</option>
-                                        <option value="1">Kg</option>
-                                        <option value="2">Lt</option>
-                                        <option value="3">Pza</option>
-                                        <option value="3">Pqte</option>
+                                        <option value="Kg">Kg</option>
+                                        <option value="Lt">Lt</option>
+                                        <option value="Pza">Pza</option>
+                                        <option value="Pqte">Pqte</option>
                                         </select>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Id proveedor</label>
-                                    <input type="text" class="form-control" id="proveedor" placeholder="1023">
+                                    <label for="id_proveedor" class="form-label">Id proveedor</label>
+                                    <input runat="server" type="text" class="form-control" id="id_proveedor" placeholder="Elige el Proveedor" required/>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Id Categoría de Producto</label>
-                                    <input type="text" class="form-control" id="id_categoria_de_producto" placeholder="1023">
+                                    <label for="id_categoria" class="form-label">Id Categoría de Producto</label>
+                                    <input runat="server" type="text" class="form-control" id="id_categoria" placeholder="Elige la Categoría" required="required"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="id_sucursal" class="form-label">Id Sucursal</label>
+                                    <input runat="server" type="text" class="form-control" id="id_sucursal" placeholder="Elige la Sucursal" required="required"/>
+                                </div>
+                                <div class="collapse">
+                                    <label for="accion">Nuevo</label>
+                                    <input runat="server" type="text" class="form-control" id="accion" value="nuevo" />
                                 </div>
                                         
                                         
@@ -55,31 +63,40 @@
                                 <div class="mb-3">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                         <asp:Button runat="server" ID="BtnAgregarProd" class="btn btn-primary me-sm-6" Text="Guardar" type="button" OnClick="BtnAgregarProd_Click"></asp:Button>
-                                        <button class="btn btn-danger"  Text="Cancelar" type="button" action="clear">Cancelar</button>
+                                        <asp:Button ID="BtnCancelar" runat="server" class="btn btn-danger"  Text="Cancelar" type="button" OnClick="BtnCancelar_Click"></asp:Button>
                                     </div>
                                 </div>
-                                            
-                                        
-
+                                    <center>
+                                    <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green" />
+                                    </center>
+                                    <center>
+                                    <asp:Label Text="" ID="lblErrorMessage" runat="server" ForeColor="Red" />
+                                    </center>
                             <!-- Modal -->
-                            <div class="modal fade" id="guardarRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Datos Guardados</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         </div>
                                         <div class="modal-body">
-                                            Se han guardado los datos correctamente.
+                                            
+                                        </div>
+                                        <div>
+                                            
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Continuar...</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
                                         </div>
                                     </div>
+                                    </div>
                                 </div>
-                            </div>
+
+                            <script type="text/javascript">
+                                function openModal() {
+                                    $('#myModal').modal('show');
+                                };
+                                </script>
                             <br />
                         </div>
                     </div>

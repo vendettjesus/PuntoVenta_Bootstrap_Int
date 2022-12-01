@@ -57,13 +57,17 @@
                                     <a class="nav-link" href="Usuarios.aspx">Usuarios
                                     </a>
                                 </li>
+                                <li class="nav-item" id="EmpleadosMenu" runat="server">
+                                    <a class="nav-link" href="Empleados.aspx">Empleados
+                                    </a>
+                                </li>
                             </ul>
                             </div>
                           </div>
                         </nav>
                         </div>
                         <div class="col-md-2">
-                            <asp:Button ID="logout" runat="server" Text="Cerrar Sesión" class="btn btn-outline-dark 
+                            <asp:Button ID="logout" runat="server" Text="Cerrar Sesión" class="btn btn-danger 
                                 my-2 my-md-2 float-right" OnClick="Logout_Click" />
                         </div>
                     

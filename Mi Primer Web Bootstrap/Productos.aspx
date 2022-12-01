@@ -24,7 +24,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Nombre Producto</label>
-                                    <input type="text" class="form-control" id="nombreProducto" placeholder="Coca-cola">
+                                    <input type="text" class="form-control" id="nombreProducto" placeholder="Coca-cola" required="required">
                                     </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Precio</label>
@@ -32,7 +32,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Unidad</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" id="unidad_medida">
                                         <option selected>Seleccione una unidad</option>
                                         <option value="1">Kg</option>
                                         <option value="2">Lt</option>

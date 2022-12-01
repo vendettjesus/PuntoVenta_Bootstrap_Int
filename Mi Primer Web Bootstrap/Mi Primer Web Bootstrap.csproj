@@ -136,6 +136,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Empleados.aspx" />
     <Content Include="Usuarios.aspx" />
     <Content Include="UsuarioBaja.aspx" />
     <Content Include="UsuarioCambio.aspx" />
@@ -340,6 +341,13 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.aspx.cs">
+      <DependentUpon>Empleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleados.aspx.designer.cs">
+      <DependentUpon>Empleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.aspx.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>

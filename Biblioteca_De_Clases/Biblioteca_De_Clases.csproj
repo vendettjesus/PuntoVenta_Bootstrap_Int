@@ -52,6 +52,7 @@
     <Compile Include="Permisos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clientes.cs" />
+    <Compile Include="Empleados.cs" />
     <Compile Include="Usuarios.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

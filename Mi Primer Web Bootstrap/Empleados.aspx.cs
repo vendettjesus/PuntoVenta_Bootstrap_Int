@@ -10,7 +10,7 @@ using Biblioteca_De_Clases;
 
 namespace Mi_Primer_Web_Bootstrap
 {
-    public partial class Usuarios : System.Web.UI.Page
+    public partial class Empleados : System.Web.UI.Page
     {
         static string cadenaConexionMySQL = "Database=puntoventa; Data Source=proyectoutags.mysql.database.azure.com; User Id=adminUtags; Password=qwerty.2022.";
         protected void Page_Load(object sender, EventArgs e)
@@ -21,7 +21,7 @@ namespace Mi_Primer_Web_Bootstrap
             }
         }
 
-        protected void BtnAgregarUsuario_Click(object sender, EventArgs e)
+        protected void BtnAgregarEmpleado_Click(object sender, EventArgs e)
         {
             try
             {
@@ -29,33 +29,33 @@ namespace Mi_Primer_Web_Bootstrap
                 using (MySqlConnection sqlConn = new MySqlConnection(cadenaConexionMySQL))
                 {
                     sqlConn.Open();
-                    MySqlCommand sqlCmd = new MySqlCommand("sp_usuarios", sqlConn);
+                    MySqlCommand sqlCmd = new MySqlCommand("sp_empleados", sqlConn);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
-                    sqlCmd.Parameters.AddWithValue("_id_usuario", Convert.ToInt32(id_Usuario.Text == "" ? "0" : id_Usuario.Text));
-                    sqlCmd.Parameters.AddWithValue("_usuario", usuario.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("_id_tipoUsuario", Convert.ToInt32(id_tipoUsuario.Text.Trim()));
-                    sqlCmd.Parameters.AddWithValue("_id_empleado", Convert.ToInt32(id_empleado.Text.Trim()));
-                    sqlCmd.Parameters.AddWithValue("_contrasena", Contrasena.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("_id_empleado", Convert.ToInt32(id_Empleado.Text == "" ? "0" : id_Empleado.Text));
+                    sqlCmd.Parameters.AddWithValue("_nombreEmpleado", nombreEmpleado.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("_RFC", rfc.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("_direccion", direccion.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("_telefono", telefono.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("accion", accion.Value = "nuevo");
                     sqlCmd.ExecuteNonQuery();
 
 
-                    lblSuccessMessage.Text = "El producto se ha agregado con exito!";
+                    lblSuccessMessage.Text = "El empleado se ha agregado con exito!";
 
                 }
             }
-            catch
+            catch(Exception ex)
             {
 
-                lblErrorMessage.Text = "Verifica que los Datos sean correctos!";
-
+                //lblErrorMessage.Text = "Verifica que los Datos sean correctos!";
+                lblErrorMessage.Text = ex.Message;
             }
         }
 
         void Clear()
         {
-            id_Usuario.Text = "";
-            usuario.Text = id_tipoUsuario.Text = id_empleado.Text = Contrasena.Text = accion.Value = "";
+            id_Empleado.Text = "";
+            nombreEmpleado.Text = rfc.Text = direccion.Text = telefono.Text = accion.Value = "";
             lblErrorMessage.Text = lblSuccessMessage.Text = "";
 
 
