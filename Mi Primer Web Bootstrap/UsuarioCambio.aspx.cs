@@ -33,9 +33,11 @@ namespace Mi_Primer_Web_Bootstrap
                 u.Id_empleado = Convert.ToInt32(id_empleado.Text);
                 u.Id_tipoUsuario = Convert.ToInt32(id_tipoUsuario.Text);
                 u.Contrasena = Convert.ToString(contrasena.Text);
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
-
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                lblSuccessMessage.Text = "La actualización se guardó con éxito";
                 controlador.ActualizarUsuario(u);
+                
+                
             }
             catch
             {
@@ -67,23 +69,23 @@ namespace Mi_Primer_Web_Bootstrap
 
         protected void Unnamed2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                int id = Convert.ToInt32(buscaNombre.Text);
-                Biblioteca_De_Clases.Usuarios u = new Biblioteca_De_Clases.Usuarios();
-                u = controlador.BuscarUsuarioNombre(id);
-                usuario.Text = u.Usuario.ToString();
+            //try
+            //{
+            //    int id = Convert.ToInt32(buscaNombre.Text);
+            //    Biblioteca_De_Clases.Usuarios u = new Biblioteca_De_Clases.Usuarios();
+            //    u = controlador.BuscarUsuarioNombre(id);
+            //    usuario.Text = u.Usuario.ToString();
 
-                id_empleado.Text = u.Id_empleado.ToString();
-                id_tipoUsuario.Text = u.Id_tipoUsuario.ToString();
-                //contrasena.Text = u.Contrasena.ToString();
-                lblErrorMessage.Text = "";
-            }
-            catch 
-            {
-                lblErrorMessage.Text = "No existe el usuario con el nombre " + buscaNombre.Text;
+            //    id_empleado.Text = u.Id_empleado.ToString();
+            //    id_tipoUsuario.Text = u.Id_tipoUsuario.ToString();
+            //    //contrasena.Text = u.Contrasena.ToString();
+            //    lblErrorMessage.Text = "";
+            //}
+            //catch 
+            //{
+            //    lblErrorMessage.Text = "No existe el usuario con el nombre " + buscaNombre.Text;
 
-            }
+            //}
         }
 
         protected void Unnamed3_Click(object sender, EventArgs e)
@@ -93,7 +95,7 @@ namespace Mi_Primer_Web_Bootstrap
 
         void Clear()
         {
-            usuario.Text = id_empleado.Text = id_tipoUsuario.Text = id_Usuario.Text = contrasena.Text = "";
+            usuario.Text = id_empleado.Text = id_tipoUsuario.Text = id_Usuario.Text = contrasena.Text = lblSuccessMessage.Text = lblErrorMessage.Text = "";
         }
     }
 }

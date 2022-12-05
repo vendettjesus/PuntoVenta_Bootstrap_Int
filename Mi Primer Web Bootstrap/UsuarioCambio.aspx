@@ -34,7 +34,7 @@
                                 </div>
                             
                             
-                                <div class="row">
+                               <%-- <div class="row">
                                     
                                     <div class="col-md-10 pb-2">
                                         <!--ETIQUETA BUsQUEDA POR NOMBRE-->
@@ -50,13 +50,8 @@
                                         <!--BOTON BUsQUEDA POR NOMBRE-->
                                         <asp:Button runat="server" Text="Buscar por Usuario" class="btn btn-primary float-left" OnClick="Unnamed2_Click" />
                                     </div>
-                                </div>
-                                <center>
-                                <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green" />
-                                </center>
-                                <center>
-                                <asp:Label Text="" ID="lblErrorMessage" runat="server" ForeColor="Red" />
-                                </center>  
+                                </div>--%>
+                                 
                                 <div class="mb-3">
                         
                         <!--LINEA DIVISORA-->
@@ -101,6 +96,12 @@
                                 <asp:TextBox runat="server" type="password" class="form-control" id="contrasena" autocomplete="off"></asp:TextBox>
                             </div>
                         </div>
+                        <center>
+                        <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green" />
+                        </center>
+                        <center>
+                        <asp:Label Text="" ID="lblErrorMessage" runat="server" ForeColor="Red" />
+                        </center> 
                         <div class="row pt-4">
                             <div class="form-group col-md-6">
                             </div>
@@ -110,7 +111,7 @@
                                 <asp:Button runat="server" type="button" Text="Guardar Cambios" ID="GuardarCambios" class="btn btn-primary"  OnClick="GuardarCambios_Click">
                                 </asp:Button>
 
-                                <!-- The Modal -->
+                                <%--<!-- The Modal -->
                                 <div class="modal fade" id="myModal">
                                   <div class="modal-dialog">
                                     <div class="modal-content">
@@ -133,7 +134,7 @@
 
                                     </div>
                                   </div>
-                                </div>
+                                </div>--%>
                             </div>
                             
                             <div class="form-group col-md-3">
