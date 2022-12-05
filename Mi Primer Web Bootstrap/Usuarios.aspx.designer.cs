@@ -60,13 +60,13 @@ namespace Mi_Primer_Web_Bootstrap
         protected global::System.Web.UI.WebControls.TextBox Contrasena;
 
         /// <summary>
-        /// Control id_tipoUsuario.
+        /// Control id_tipoUsuario_.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id_tipoUsuario;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect id_tipoUsuario_;
 
         /// <summary>
         /// Control id_empleado.

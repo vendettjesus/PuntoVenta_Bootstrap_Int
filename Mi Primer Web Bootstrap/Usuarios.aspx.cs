@@ -33,7 +33,7 @@ namespace Mi_Primer_Web_Bootstrap
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlCmd.Parameters.AddWithValue("_id_usuario", Convert.ToInt32(id_Usuario.Text == "" ? "0" : id_Usuario.Text));
                     sqlCmd.Parameters.AddWithValue("_usuario", usuario.Text.Trim());
-                    sqlCmd.Parameters.AddWithValue("_id_tipoUsuario", Convert.ToInt32(id_tipoUsuario.Text.Trim()));
+                    sqlCmd.Parameters.AddWithValue("_id_tipoUsuario", Convert.ToInt32(id_tipoUsuario_.Value));
                     sqlCmd.Parameters.AddWithValue("_id_empleado", Convert.ToInt32(id_empleado.Text.Trim()));
                     sqlCmd.Parameters.AddWithValue("_contrasena", Contrasena.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("accion", accion.Value = "nuevo");
@@ -55,7 +55,7 @@ namespace Mi_Primer_Web_Bootstrap
         void Clear()
         {
             id_Usuario.Text = "";
-            usuario.Text = id_tipoUsuario.Text = id_empleado.Text = Contrasena.Text = accion.Value = "";
+            usuario.Text = id_empleado.Text = Contrasena.Text = accion.Value = "";
             lblErrorMessage.Text = lblSuccessMessage.Text = "";
 
 

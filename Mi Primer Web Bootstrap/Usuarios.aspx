@@ -36,7 +36,14 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label for="id_tipoUsuario">Id Tipo Usuario</label>
-                                <asp:TextBox runat="server" type="text" class="form-control" id="id_tipoUsuario" required="required"></asp:TextBox>
+                                <select runat="server"  class="form-select" id="id_tipoUsuario_">
+                                        <option selected>Seleccione el tipo de usuario</option>
+                                        <option value="1">1 Administrador</option>
+                                        <option value="2">2 Usuario Operacional</option>
+                                        <option value="3">3 Usuario Supervisor</option>
+                                        <option value="4">4 Usuario Ejecutivo</option>
+                                 </select>
+                                <%--<asp:TextBox runat="server" type="text" class="form-control" id="id_tipoUsuario" required="required"></asp:TextBox>--%>
                             </div>
                         
                             <div class="form-group mb-3">
