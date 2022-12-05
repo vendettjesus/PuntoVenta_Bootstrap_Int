@@ -11,26 +11,8 @@ namespace Mi_Primer_Web_Bootstrap
 {
 
 
-    public partial class UsuarioCambio
+    public partial class EmpleadosModificar
     {
-
-        /// <summary>
-        /// Control buscaID.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox buscaID;
-
-        /// <summary>
-        /// Control buscaNombre.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox buscaNombre;
 
         /// <summary>
         /// Control lblSuccessMessage.
@@ -51,57 +33,75 @@ namespace Mi_Primer_Web_Bootstrap
         protected global::System.Web.UI.WebControls.Label lblErrorMessage;
 
         /// <summary>
-        /// Control id_Usuario.
+        /// Control id_Empleado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id_Usuario;
+        protected global::System.Web.UI.WebControls.TextBox id_Empleado;
 
         /// <summary>
-        /// Control usuario.
+        /// Control nombreEmpleado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usuario;
+        protected global::System.Web.UI.WebControls.TextBox nombreEmpleado;
 
         /// <summary>
-        /// Control id_tipoUsuario.
+        /// Control rfc.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id_tipoUsuario;
+        protected global::System.Web.UI.WebControls.TextBox rfc;
 
         /// <summary>
-        /// Control id_empleado.
+        /// Control direccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id_empleado;
+        protected global::System.Web.UI.WebControls.TextBox direccion;
 
         /// <summary>
-        /// Control contrasena.
+        /// Control telefono.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasena;
+        protected global::System.Web.UI.WebControls.TextBox telefono;
 
         /// <summary>
-        /// Control GuardarCambios.
+        /// Control accion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GuardarCambios;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText accion;
+
+        /// <summary>
+        /// Control BtnModificarEmpleado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnModificarEmpleado;
+
+        /// <summary>
+        /// Control BtnCancelar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnCancelar;
     }
 }

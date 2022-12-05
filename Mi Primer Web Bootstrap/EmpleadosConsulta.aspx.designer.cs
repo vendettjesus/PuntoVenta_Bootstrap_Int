@@ -11,26 +11,44 @@ namespace Mi_Primer_Web_Bootstrap
 {
 
 
-    public partial class UsuarioCambio
+    public partial class EmpleadosConsulta
     {
 
         /// <summary>
-        /// Control buscaID.
+        /// Control id_empleado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox buscaID;
+        protected global::System.Web.UI.WebControls.TextBox id_empleado;
 
         /// <summary>
-        /// Control buscaNombre.
+        /// Control BtnBusquedaPorId.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox buscaNombre;
+        protected global::System.Web.UI.WebControls.Button BtnBusquedaPorId;
+
+        /// <summary>
+        /// Control nombreEmpleado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox nombreEmpleado;
+
+        /// <summary>
+        /// Control BtnBusquedaPorNomb.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnBusquedaPorNomb;
 
         /// <summary>
         /// Control lblSuccessMessage.
@@ -51,57 +69,12 @@ namespace Mi_Primer_Web_Bootstrap
         protected global::System.Web.UI.WebControls.Label lblErrorMessage;
 
         /// <summary>
-        /// Control id_Usuario.
+        /// Control TablaEmpleados.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id_Usuario;
-
-        /// <summary>
-        /// Control usuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usuario;
-
-        /// <summary>
-        /// Control id_tipoUsuario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id_tipoUsuario;
-
-        /// <summary>
-        /// Control id_empleado.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox id_empleado;
-
-        /// <summary>
-        /// Control contrasena.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasena;
-
-        /// <summary>
-        /// Control GuardarCambios.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button GuardarCambios;
+        protected global::System.Web.UI.WebControls.GridView TablaEmpleados;
     }
 }

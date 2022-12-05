@@ -5,48 +5,86 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Biblioteca_De_Clases;
+using System.ComponentModel;
+using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace Mi_Primer_Web_Bootstrap
 {
     public partial class UsuarioBaja : System.Web.UI.Page
     {
+        static string cadenaConexionMySQL = "Database=puntoventa; Data Source=proyectoutags.mysql.database.azure.com; User Id=adminUtags; Password=qwerty.2022.";
+        MySqlConnection mySql = new MySqlConnection(cadenaConexionMySQL);
+        Controlador c = new Controlador();
+        Conexion conexion = new Conexion();
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        Controlador c = new Controlador();
-        protected void btnBuscaID_Click(object sender, EventArgs e)
+        
+        protected void BtnBuscaID_Click(object sender, EventArgs e)
         {
-            Biblioteca_De_Clases.Usuarios u = c.BuscarUsuarioID(Convert.ToInt32(buscaID.Text));
+            
+            
+            string query = "SELECT * FROM Usuarios WHERE id_usuario =" + id_usuario.Text;
+            DataTable dt = conexion.ConsultarRegistrosMySQL(query);
 
-            id_usuario.Text = u.Id_usuario.ToString();
-            usuario.Text = u.Usuario;
-            id_tipoUsuario.Text = u.Id_tipoUsuario.ToString();
-            id_empleado.Text = u.Id_empleado.ToString();
+            TablaUsuarios.DataSource = conexion.ConsultarRegistrosMySQL(query);
+            
+                
+            try
+            {
+                TablaUsuarios.DataBind();
+            }
+            catch
+            {
 
-            buscaID.Text = "";
+            }
+            
         }
 
-        protected void btnBuscaNombre_Click(object sender, EventArgs e)
+        protected void BtnBuscaNombre_Click(object sender, EventArgs e)
         {
-            Biblioteca_De_Clases.Usuarios u = c.BuscarUsuarioNombre(buscaNombre.Text);
+            try
+            {
+                string query = "SELECT * FROM Usuarios WHERE usuario = '" + usuario.Text.ToUpper() + "';";
+                DataTable dt = conexion.ConsultarRegistrosMySQL(query);
 
-            id_usuario.Text = u.Id_usuario.ToString();
-            usuario.Text = u.Usuario;
-            id_tipoUsuario.Text = u.Id_tipoUsuario.ToString();
-            id_empleado.Text = u.Id_empleado.ToString();
+                TablaUsuarios.DataSource = conexion.ConsultarRegistrosMySQL(query);
 
-            buscaNombre.Text = "";
+                try
+                {
+
+                    TablaUsuarios.DataBind();
+                }
+                catch
+                {
+
+                }
+
+            }
+            catch
+            {
+
+                //lblErrorMessage.Text = "Verifique los datos";
+            }
         }
 
-        protected void Unnamed2_Click(object sender, EventArgs e)
-        {
-            c.EliminarUsuario(Convert.ToInt32(id_usuario.Text));
 
+        protected void EliminarUsuario_Click(object sender, EventArgs e)
+        {
+
+            
+            string query = "DELETE FROM Usuarios WHERE id_usuario =" + id_usuario_eliminar.Text;
+            conexion.EjecutarQueryMySQL(query);
+
+        }
+
+        protected void LimpiarForm_Click(object sender, EventArgs e)
+        {
             id_usuario.Text = "";
             usuario.Text = "";
-            id_tipoUsuario.Text = "";
-            id_empleado.Text = "";
+            id_usuario_eliminar.Text = "";
         }
     }
 }

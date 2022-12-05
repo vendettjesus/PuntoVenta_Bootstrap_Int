@@ -8,6 +8,7 @@ using System.ComponentModel;
 using MySql.Data.MySqlClient;
 using System.Data;
 using Biblioteca_De_Clases;
+using System.Collections;
 
 namespace Mi_Primer_Web_Bootstrap
 {
@@ -39,7 +40,7 @@ namespace Mi_Primer_Web_Bootstrap
                     sqlCmd.Parameters.AddWithValue("_id_sucursal", Convert.ToInt32(id_sucursal.Value.Trim()));
                     sqlCmd.Parameters.AddWithValue("_id_proveedor", Convert.ToInt32(id_proveedor.Value.Trim()));
                     sqlCmd.Parameters.AddWithValue("_id_categoria", Convert.ToInt32(id_categoria.Value.Trim()));
-                    sqlCmd.Parameters.AddWithValue("_nombre_producto", nombre_producto.Value.Trim());
+                    sqlCmd.Parameters.AddWithValue("_nombre_producto", nombre_producto.Value.ToUpper().Trim());
                     sqlCmd.Parameters.AddWithValue("_unidad_medida", unidad_medida.Value.Trim());
                     sqlCmd.Parameters.AddWithValue("accion", accion.Value = "nuevo");
                     sqlCmd.ExecuteNonQuery();

@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoriaProducto.cs" />
     <Compile Include="Sucursal.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="Productos.cs" />

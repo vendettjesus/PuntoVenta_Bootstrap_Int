@@ -87,6 +87,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="EmpleadosConsulta.aspx" />
+    <Content Include="EmpleadosModificar.aspx" />
+    <Content Include="EmpleadosEliminar.aspx" />
     <Content Include="Imagenes\administrativo.jpg" />
     <Content Include="Imagenes\administrativo2.jpg" />
     <Content Include="Imagenes\alumnos.jpg" />
@@ -108,6 +111,7 @@
     <Content Include="Otros Elementos\Pagina3.aspx" />
     <Content Include="Otros Elementos\PaginaBootstrap.aspx" />
     <Content Include="Otros Elementos\profesores.aspx" />
+    <Content Include="ProductoRegistrarCat.aspx" />
     <Content Include="Productos.aspx" />
     <Content Include="ProductosAgregar.aspx" />
     <Content Include="ProductosConsultas.aspx" />
@@ -248,6 +252,27 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmpleadosConsulta.aspx.cs">
+      <DependentUpon>EmpleadosConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpleadosConsulta.aspx.designer.cs">
+      <DependentUpon>EmpleadosConsulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadosModificar.aspx.cs">
+      <DependentUpon>EmpleadosModificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpleadosModificar.aspx.designer.cs">
+      <DependentUpon>EmpleadosModificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadosEliminar.aspx.cs">
+      <DependentUpon>EmpleadosEliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmpleadosEliminar.aspx.designer.cs">
+      <DependentUpon>EmpleadosEliminar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Otros Elementos\alum.aspx.cs">
       <DependentUpon>alum.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -300,6 +325,13 @@
     </Compile>
     <Compile Include="Otros Elementos\profesores.aspx.designer.cs">
       <DependentUpon>profesores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductoRegistrarCat.aspx.cs">
+      <DependentUpon>ProductoRegistrarCat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductoRegistrarCat.aspx.designer.cs">
+      <DependentUpon>ProductoRegistrarCat.aspx</DependentUpon>
     </Compile>
     <Compile Include="Productos.aspx.cs">
       <DependentUpon>Productos.aspx</DependentUpon>

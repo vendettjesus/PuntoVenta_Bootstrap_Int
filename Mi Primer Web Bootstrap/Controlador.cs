@@ -53,6 +53,10 @@ namespace Mi_Primer_Web_Bootstrap
             }
 
         }
+        internal Biblioteca_De_Clases.Usuarios BuscarUsuarioNombre(int id)
+        {
+            throw new NotImplementedException();
+        }
 
         public Biblioteca_De_Clases.Usuarios BuscarUsuarioID(int id_usuario)
         {
@@ -62,7 +66,7 @@ namespace Mi_Primer_Web_Bootstrap
             DataTable dt = conexion.ConsultarRegistrosMySQL(query);
             Biblioteca_De_Clases.Usuarios u = new Biblioteca_De_Clases.Usuarios();
 
-            u.Id_usuario = Convert.ToInt32(dt.Rows[0]["idUsuario"]);
+            u.Id_usuario = Convert.ToInt32(dt.Rows[0]["id_usuario"]);
             u.Usuario = dt.Rows[0]["usuario"].ToString();
             u.Id_tipoUsuario = Convert.ToInt32(dt.Rows[0]["id_tipoUsuario"]);
             u.Id_empleado = Convert.ToInt32(dt.Rows[0]["id_empleado"]);
@@ -78,7 +82,7 @@ namespace Mi_Primer_Web_Bootstrap
             DataTable dt = conexion.ConsultarRegistrosMySQL(query);
             Biblioteca_De_Clases.Usuarios u = new Biblioteca_De_Clases.Usuarios();
 
-            u.Id_usuario = Convert.ToInt32(dt.Rows[0]["idUsuario"]);
+            u.Id_usuario = Convert.ToInt32(dt.Rows[0]["id_Usuario"]);
             u.Usuario = dt.Rows[0]["usuario"].ToString();
             u.Id_tipoUsuario = Convert.ToInt32(dt.Rows[0]["id_tipoUsuario"]);
             u.Id_empleado = Convert.ToInt32(dt.Rows[0]["id_empleado"]);
@@ -90,7 +94,43 @@ namespace Mi_Primer_Web_Bootstrap
             return conexion.EjecutarQueryMySQL(query);            
         }
 
+        public int EliminarProducto(int id_producto)
+        {
+            string query = "DELETE FROM producto WHERE id_producto =" + id_producto.ToString();
+            return conexion.EjecutarQueryMySQL(query);
+        }
 
+        public Biblioteca_De_Clases.Productos BuscarProductoNombre(string nombre_producto)
+        {
+            string query = "Select * from " +
+            "producto p Where producto_nombre ='" + nombre_producto + "'";
+            //DEBE AGREGAR EL using System.Data;
+            DataTable dt = conexion.ConsultarRegistrosMySQL(query);
+            Biblioteca_De_Clases.Productos p = new Biblioteca_De_Clases.Productos();
+
+            p.Id_producto = Convert.ToInt32(dt.Rows[0]["id_producto"]);
+            p.Precio = Convert.ToInt32(dt.Rows[0]["precio"]);
+            p.Id_sucursal = Convert.ToInt32(dt.Rows[0]["id_sucursal"]);
+            p.Id_categoria = Convert.ToInt32(dt.Rows[0]["id_categoria"]);
+            p.Nombre_producto = dt.Rows[0]["nombre_producto"].ToString();
+            p.Unidad_medida = dt.Rows[0]["unidad_medida"].ToString();
+            return p;
+        }
+
+        public int RegistrarCate(Biblioteca_De_Clases.CategoriaProducto r)
+        {
+            string query = "INSERT INTO categoria_producto (nombre_categoria)" + "VALUES ('" + r.Nombre_categoria + "')";
+
+            return conexion.EjecutarQueryMySQL(query);
+        }
+
+        public int ActualizarUsuario(Biblioteca_De_Clases.Usuarios u)
+        {
+            string query = "UPDATE Usuarios SET id_tipousuario = '" + u.Id_tipoUsuario + "', Usuario = '" + u.Usuario + "', Id_empleado = " + u.Id_empleado + ", Contrasena = '" + u.Contrasena + "' WHERE Id_Usuario = " + u.Id_usuario + ";";
+
+            return conexion.EjecutarQueryMySQL(query);
+        }
+       
     }
 }
 

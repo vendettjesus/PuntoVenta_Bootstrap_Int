@@ -5,17 +5,18 @@
     <div class="row">
             <div class="col-md-2 p-1">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-home-list" href="ProductosAgregar.aspx" role="tab" aria-controls="home">Agregar</a>
-                    <a class="list-group-item list-group-item-action" id="list-profile-list"  href="ProductosEliminar.aspx" role="tab" aria-controls="profile">Eliminar</a>
-                    <a class="list-group-item list-group-item-action" id="list-messages-list" href="ProductosModificar.aspx" role="tab" aria-controls="messages">Modificar</a>
-                    <a class="list-group-item list-group-item-action" id="list-settings-list" href="ProductosConsultas.aspx" role="tab">Consultas</a>
+                    <a class="list-group-item  list-group-item-action text-bg-dark" id="list-add-list" href="ProductosAgregar.aspx" role="tab">Agregar</a>
+                    <a class="list-group-item  list-group-item-action text-bg-dark" id="list-delete-list" href="ProductosEliminar.aspx" role="tab">Eliminar</a>
+                    <a class="list-group-item  list-group-item-action text-bg-dark" id="list-modify-list" href="ProductosModificar.aspx" role="tab">Modificar</a>
+                    <a class="list-group-item  list-group-item-action text-bg-dark" id="list-query-list" href="ProductosConsultas.aspx" role="tab">Consultas</a>
+                    <a class="list-group-item  list-group-item-action text-bg-dark" id="list-category-list" href="ProductoRegistrarCat.aspx" role="tab">Registrar Categoría</a>
                 </div>
             </div>
                         
             <br />
             <div class="col-md-8 p-1 collapse">
                 <div class="card ">
-                    <h5 class="card-header text-center alert alert-primary">Agregar Producto</h5>
+                    <h5 class="card-header text-center alert bg-dark">Agregar Producto</h5>
                         <div class="card-body">
                                         
                                 <div class="mb-3">

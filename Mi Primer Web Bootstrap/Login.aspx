@@ -32,10 +32,10 @@
             <br />
             <div class="container-md align-content-center">
             <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
                     <div class="card">
-                        <div class="card-header text-center alert alert-primary">
+                        <div class="card-header text-center alert alert-dark">
                             <strong>Bienvenido al Sistema</strong> 
                         </div>
                         <div class="card-body">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4"></div>
+                <div class="col-md-4"></div>
             </div>
             </div>
         </div>

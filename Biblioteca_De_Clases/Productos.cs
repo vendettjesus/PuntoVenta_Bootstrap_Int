@@ -40,7 +40,7 @@ namespace Biblioteca_De_Clases
         public int Id_producto { get => id_producto; set => id_producto = value; }
         public decimal Precio { get => precio; set => precio = value; }
         public int Id_sucursal { get => id_sucursal; set => id_sucursal = value; }
-         public int Id_proveedor { get => id_proveedor; set => id_proveedor = value; }
+        public int Id_proveedor { get => id_proveedor; set => id_proveedor = value; }
         public int Id_categoria { get => id_categoria; set => id_categoria = value; }
         public string Nombre_producto { get => nombre_producto; set => nombre_producto = value; }
         public string Unidad_medida { get => unidad_medida; set => unidad_medida = value; }

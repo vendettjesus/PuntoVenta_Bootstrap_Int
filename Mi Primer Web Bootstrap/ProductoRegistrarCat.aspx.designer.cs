@@ -11,25 +11,34 @@ namespace Mi_Primer_Web_Bootstrap
 {
 
 
-    public partial class Ventas
+    public partial class ProductoRegistrarCat
     {
 
         /// <summary>
-        /// Control ListBox2.
+        /// Control nombre_categoria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox2;
+        protected global::System.Web.UI.WebControls.TextBox nombre_categoria;
 
         /// <summary>
-        /// Control producto1.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton producto1;
+        protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Control lblprocedimiento.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblprocedimiento;
     }
 }

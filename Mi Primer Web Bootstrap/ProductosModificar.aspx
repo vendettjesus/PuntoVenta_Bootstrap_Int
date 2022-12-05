@@ -5,85 +5,77 @@
                     <div class="row">
                         <div class="col-md-2 p-1">
                             <div class="list-group" id="list-tab" role="tablist">
-                                <a class="list-group-item list-group-item-action" id="list-home-list" href="ProductosAgregar.aspx" role="tab" aria-controls="home">Agregar</a>
-                                <a class="list-group-item list-group-item-action" id="list-profile-list"  href="ProductosEliminar.aspx" role="tab" aria-controls="profile">Eliminar</a>
-                                <a class="list-group-item list-group-item-action active" id="list-messages-list" href="ProductosModificar.aspx" role="tab" aria-controls="messages">Modificar</a>
-                                <a class="list-group-item list-group-item-action" id="list-settings-list" href="ProductosConsultas.aspx" role="tab">Consultas</a>
+                                <a class="list-group-item  list-group-item-action text-bg-dark" id="list-add-list" href="ProductosAgregar.aspx" role="tab">Agregar</a>
+                                <a class="list-group-item  list-group-item-action text-bg-dark" id="list-delete-list" href="ProductosEliminar.aspx" role="tab">Eliminar</a>
+                                <a class="list-group-item  list-group-item-action active" id="list-modify-list" href="ProductosModificar.aspx" role="tab">Modificar</a>
+                                <a class="list-group-item  list-group-item-action text-bg-dark" id="list-query-list" href="ProductosConsultas.aspx" role="tab">Consultas</a>
+                                <a class="list-group-item  list-group-item-action text-bg-dark" id="list-category-list" href="ProductoRegistrarCat.aspx" role="tab">Registrar Categoría</a>
                             </div>
                         </div>
                         
                         <br />
                         <div class="col-md-8 p-1">
                             <div class="card ">
-                                <h5 class="card-header text-center alert alert-primary">Modificar Producto</h5>
+                                <h5 class="card-header text-center alert alert-dark">Modificar Producto</h5>
                                     <div class="card-body">
-                                        
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Id produco</label>
-                                                <input type="text" class="form-control" id="id_producto" placeholder="1023" disabled>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Nombre Producto</label>
-                                                <input type="text" class="form-control" id="nombreProducto" placeholder="Coca-cola">
-                                              </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Precio</label>
-                                                <input type="number" class="form-control" id="precio" placeholder="36.56">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Unidad</label>
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>Seleccione una unidad</option>
-                                                    <option value="1">Kg</option>
-                                                    <option value="2">Lt</option>
-                                                    <option value="3">Pza</option>
-                                                    <option value="3">Pqte</option>
-                                                  </select>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Id proveedor</label>
-                                                <input type="text" class="form-control" id="proveedor" placeholder="1023" disabled>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label">Id Categoría de Producto</label>
-                                                <input type="text" class="form-control" id="id_categoria_de_producto" placeholder="1023" disabled>
-                                            </div>
+                                 <center>
+                                <asp:Label Text="" ID="lblSuccessMessage" runat="server" ForeColor="Green" />
+                                </center>
+                                <center>
+                                <asp:Label Text="" ID="lblErrorMessage" runat="server" ForeColor="Red" />
+                                </center>       
+                                <div class="mb3">
+                                    <label for="id_producto" class="form-label">Id producto</label>
+                                    <input runat="server" type="text" class="form-control" id="id_producto" required="required">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nombre_producto" class="form-label">Nombre Producto</label>
+                                    <input runat="server" type="text" class="form-control" id="nombre_producto" placeholder="Coca-cola" required="required">
+                                    </div>
+                                <div class="mb-3">
+                                    <label for="precio" class="form-label">Precio</label>
+                                    <input type="number" runat="server" class="form-control" id="precio" placeholder="Inserte cantidad" required="required"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="unidad_medida" class="form-label">Unidad</label>
+                                    <select runat="server" class="form-select" id="unidad_medida" aria-label="Default select example">
+                                        <option selected>Seleccione una unidad</option>
+                                        <option value="Kg">Kg</option>
+                                        <option value="Lt">Lt</option>
+                                        <option value="Pza">Pza</option>
+                                        <option value="Pqte">Pqte</option>
+                                        </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="id_proveedor" class="form-label">Id proveedor</label>
+                                    <input runat="server" type="text" class="form-control" id="id_proveedor" placeholder="Elige el Proveedor" required/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="id_categoria" class="form-label">Id Categoría de Producto</label>
+                                    <input runat="server" type="text" class="form-control" id="id_categoria" placeholder="Elige la Categoría" required="required"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="id_sucursal" class="form-label">Id Sucursal</label>
+                                    <input runat="server" type="text" class="form-control" id="id_sucursal" placeholder="Elige la Sucursal" required="required"/>
+                                </div>
+                                <div class="collapse">
+                                    <label for="accion">Nuevo</label>
+                                    <input runat="server" type="text" class="form-control" id="accion" value="nuevo" />
+                                </div>
                                         
                                         
 
                                         <!-- Boton Guardar Cancelar -->
                                             <div class="mb-3">
                                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                    <button class="btn btn-primary me-sm-6" Text="Guardar" type="button">Guardar</button>
+                                                    <asp:Button ID="btnModificarProducto" runat="server" class="btn btn-primary me-sm-6" Text="Guardar" type="button" OnClick="BtnModificarProducto_Click"></asp:Button>
                                                     <button class="btn btn-danger"  Text="Cancelar" type="button">Cancelar</button>
                                                 </div>
                                             </div>
-                                            
-                                        
-
                                         <!-- Modal -->
-                                        <div class="modal fade" id="guardarRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Datos Guardados</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Se han guardado los datos correctamente.
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Continuar...</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <br />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-            </asp:Content>
+</asp:Content>
